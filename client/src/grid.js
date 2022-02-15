@@ -5,7 +5,7 @@ import { TextBoxComponent } from "./component";
 class Grid {
     tiles = [];
     components = [];
-    static colors = ["black", "maroon", "greeno", "olive", "navy", "purple", "teal", "silver", "gray", "red", "lime", "yellow", "blue", "fuchsia", "cyan", "white"];
+    static colors = ["black", "maroon", "green", "olive", "navy", "purple", "teal", "silver", "gray", "red", "lime", "yellow", "blue", "fuchsia", "cyan", "white"];
     constructor(ctx, w, h) {
         this.x = Math.floor(w / (22 * 0.52));
         this.y = Math.floor(h / 22);
