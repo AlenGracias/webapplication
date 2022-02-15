@@ -12,10 +12,10 @@ const days = require('./routes/api/days');
 
 app.use('/api/db', days);
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'public')));
-    app.get('/', (req, res) => res.sendFile(__dirname + '/public/index.html'));
-}
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.get('/', (req, res) => res.sendFile(__dirname + '/public/index.html'));
+
 
 const PORT = process.env.PORT || 5000;
 
